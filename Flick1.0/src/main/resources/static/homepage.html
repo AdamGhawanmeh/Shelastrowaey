@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie Info</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/css-bootstrap.min.css" rel="stylesheet">
+    <link href="css/css-style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav id="navigation">
+      <!-- <a href="#" class="logo">Studio<span>+<span></a> -->
+      <ul class="links">
+        <li><a href="#">About</a></li>
+        <li class="dropdown"><a href="#" class="trigger-drop">Work<i class="arrow"></i></a>
+          <ul class="drop">
+            <li><a href="#">Art</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">Audio</a></li>
+            <li><a href="#">Films</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="trigger-drop">Contact<i class="arrow"></i></a>
+          <ul class="drop">
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Phone</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class = "button" id="btn" onclick="logout();">Log Out</button>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+         <img src="logo nav.png" alt="" width="25%" height="25%">
+          </div>
+      </div>
+    </nav> -->
+
+    <div class="container">
+      <div class="jumbotron">
+        <h3 class="text-center">Search For Any Movie</h3>
+        <br>
+        <form id="searchForm">
+          <input type="text" class="form-control" id="searchText" placeholder="Search Movie...">
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="movies" class="row"></div>
+    </div>
+    <!-- <button id="btn" style="color:red; width:150px;" onclick="logout();">Log Out</button> -->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="script/4265-js-jquery-3.2.1.min.js"></script>
+    <script src="script/8738-js-bootstrap.min.js"></script>
+    <script src="script/162-js-main.js"></script>
+    <script src="script/2103-js-axios.min.js"></script>
+    <!-- <script type="text/javascript" src="script/signup.js"></script> -->
+  </body>
+</html>
